@@ -1,0 +1,230 @@
+h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 5px rgb(105, 3, 3);
+}
+
+.title {
+    color: #099c04;
+}
+
+#italic {
+    color: sandybrown;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.container {
+    border: 3px dashed grey;
+    margin: 50px 5px 100px 200px;
+    padding: 30px 150px 100px 0px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(92, 189, 12);
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
+        
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: inherit;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: initial;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+
+@keyframes changeColor {
+    0% {background-color: orangered;}
+    25% {background-color: rgb(56, 139, 30);}
+    50% {background-color: rgb(22, 90, 81);}
+    75% {background-color: rgb(15, 122, 51);}
+    100% {background-color: rgb(53, 11, 46);}
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+    
+}
+
+
+#box5 {
+    position: relative;
+    animation: moveBox 5s 3s infinite;
+    background-color: red;
+}
+
+#box4 {
+    animation: changeColor 3s 3s forwards;
+}
+
+#box3 {
+    animation: getBigger 6s 2s infinite;
+    border-radius: 50%;
+    background: orange;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.circle-Img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 10px 5px 20px 8px rgb(161, 161, 161);
+}
+
+.flex {
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.nav-wrapper {
+    background-color: rgb(69, 70, 80);
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+
+body {
+    margin: 40px;
+  }
+  
+.wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, [col] 17% ) ;
+      grid-template-rows: repeat(3, [row] auto  );
+      background-color: #fff;
+      color: #444;
+    }
+  
+.Box {
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      z-index:10;
+
+    }
+  
+.a {
+      grid-column: col / span  2;
+      grid-row: row ;
+      display: flex;
+      justify-content: center;
+    }
+.b {
+      grid-column: col 4 / span  2 ;
+      grid-row: row ;
+      display: flex;
+      justify-content: center;
+    }
+.c {
+      grid-column: col / span 5;
+      grid-row: row 2 ;
+      display: flex;
+      justify-content: center;
+    
+    }
+.d {
+      grid-column: col 1 / span  2 ;
+      grid-row: row 3 ;
+      display: flex;
+      justify-content: center;
+    }
+  
+.e {
+      grid-column: col 3 / span  3;
+      grid-row: row 3;
+      display: flex;
+      justify-content: center;
+    }
+  
+.f {
+      grid-column: col 2 / span 3;
+      grid-row: row 2  ;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      
+    }
