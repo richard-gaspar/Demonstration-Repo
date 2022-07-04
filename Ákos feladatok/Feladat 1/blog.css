@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+nav a:link {
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Sima elemként az előző meghatározást nem lehetett felül írni csak így tudtam*/
+nav a:last-child {
+  color: #ffff;
+  background-color: #1090cb;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #1090cb;
+  cursor: default;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 0;
+  color: #1090cb;
+  margin-bottom: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 0.7px solid #c4c4c4;
+  margin-bottom: 50px;
+  /* Nem tudom a megfelelő vastagságot itt se */
+  font-weight: bold;
+}
+
+/* Nem tudom máshogy a vastagságot ilyenre állítani */
+.logo {
+  text-transform: uppercase;
+  /* font-weight: 700px; */
+  color: #1090cb;
+  font-size: 30px;
+  text-shadow: 2px 0;
+  letter-spacing: 2px;
+}
+
+.p-search {
+  color: #777777;
+  font-size: 20px;
+}
+
+.searchbar {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 300px;
+  margin: 40px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -200px;
+}
+
+.elements {
+  color: #1090cb;
+  background-color: #e7eff3;
+  margin: 15px;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.elements:hover {
+  color: #ffff;
+  background-color: #1090cb;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 150px;
+  margin-bottom: 200px;
+}
+
+.first-grid-element {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -300px;
+  gap: 100px;
+}
+
+.main-element {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.read-more {
+  display: flex;
+  justify-content: space-between;
+  width: 425px;
+}
+
+.read-more a {
+  color: #1090cb;
+  align-self: center;
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 1px 0;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.flex-element {
+  width: 333px;
+}
+
+.image {
+  width: 333px;
+  height: 306px;
+  border-radius: 15%;
+  margin-bottom: 40px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 33.74px;
+  margin-bottom: 20px;
+  width: 333px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: #7b7b7bc2;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.relative-star {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  right: 1550px;
+  bottom: 645px;
+  transform: rotate(45deg);
+}
+
+.relative-thing {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  right: 680px;
+  top: 150px;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+  padding: 250px;
+  background-color: #e8f4fa;
+  gap: 50px;
+}
+
+.email {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 532px;
+  margin: 10px;
+}
+
+.subscribe-button {
+  background-color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+
+.subscribe-button a {
+  color: #fff4f4;
+  text-decoration: none;
+  font-family: poppins;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00329b;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-shadow: 1px 0;
+  margin-bottom: 20px;
+}
+
+.footer-logo-p {
+  margin-bottom: 50px;
+}
+
+.footer-headline {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Ezt máshogy is megtudnám oldani de gondoltam gyakorlom a flexet */
+.footer-item {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-item:nth-of-type(2) {
+  margin-left: 100px;
+}
+
+.footer-item ul {
+  line-height: 30px;
+}
+
+.link-logo {
+  width: 34px;
+  margin-right: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px rgba(97, 97, 97, 0.425);
+}
+
+.copyright {
+  color: #686868;
+  text-align: center;
+  padding: 50px;
+  border-top: 0.7px solid #d2d2d2;
+  margin-top: 50px;
+}

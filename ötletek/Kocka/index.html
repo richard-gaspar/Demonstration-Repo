@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future ball</title>
+    <style>
+      body {
+        background-color: #15aabf;
+        color: #063339;
+        text-align: center;
+      }
+
+      .square {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin-top: 200px;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      .dot {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .dot1,
+      .dot3-3 {
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .dot2-1 {
+        left: 20%;
+        top: 20%;
+      }
+
+      .dot2-2 {
+        right: 20%;
+        bottom: 20%;
+      }
+
+      .dot3-1 {
+        left: 15%;
+        top: 15%;
+      }
+
+      .dot3-2 {
+        right: 15%;
+        bottom: 15%;
+      }
+
+      .dot4-1 {
+        left: 10%;
+        top: 10%;
+      }
+
+      .dot4-2 {
+        right: 10%;
+        bottom: 10%;
+      }
+
+      .dot4-3 {
+        right: 10%;
+        top: 10%;
+      }
+
+      .dot4-4 {
+        left: 10%;
+        bottom: 10%;
+      }
+
+      .dot6-1 {
+        left: 20%;
+        top: 10%
+      }
+
+      .dot6-2 {
+        right: 20%;
+        top: 10%;
+      }
+
+      .dot6-3 {
+        left: 20%;
+        top: 40%
+      }
+
+      .dot6-4 {
+        right: 20%;
+        bottom: 10%;
+      }
+
+      .dot6-5 {
+        left: 20%;
+        bottom: 10%
+      }
+
+      .dot6-6 {
+        right: 20%;
+        top: 40%
+      }
+
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dobj a kockával</h1>
+    <div class="square">
+      <div class="one">
+        <div class="dot dot1"></div>
+      </div>
+      <div class="two">
+        <div class="dot dot2-1"></div>
+        <div class="dot dot2-2"></div>
+      </div>
+      <div class="three">
+        <div class="dot dot3-1"></div>
+        <div class="dot dot3-2"></div>
+        <div class="dot dot3-3"></div>
+      </div>
+      <div class="four">
+        <div class="dot dot4-1"></div>
+        <div class="dot dot4-2"></div>
+        <div class="dot dot4-3"></div>
+        <div class="dot dot4-4"></div>
+      </div>
+      <div class="five">
+        <div class="dot dot4-1"></div>
+        <div class="dot dot4-2"></div>
+        <div class="dot dot4-3"></div>
+        <div class="dot dot4-4"></div>
+        <div class="dot dot1"></div>
+      </div>
+      <div class="six">
+        <div class="dot dot6-1"></div>
+        <div class="dot dot6-2"></div>
+        <div class="dot dot6-3"></div>
+        <div class="dot dot6-4"></div>
+        <div class="dot dot6-5"></div>
+        <div class="dot dot6-6"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

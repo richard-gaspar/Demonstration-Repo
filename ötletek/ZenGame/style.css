@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  color: #222;
+  font-family: sans-serif;
+  background-color: #d9dbd9;
+  max-width: 120rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.column-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid black;
+  background-color: #d9dbd9;
+  opacity: 1;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.square:not(:last-child) {
+  /* background-color: green; */
+  opacity: 0.2;
+}
+
+.square:not(:first-child) {
+  margin-top: -1rem;
+}
+
+.square:last-child {
+  position: relative;
+}
+
+.bitcoin {
+  background-image: url("img/a.png");
+  background-size: cover;
+}
+
+.dogecoin {
+  background-image: url("img/d.png");
+  background-size: cover;
+}
+
+.ethereum {
+  background-image: url("img/e.png");
+  background-size: cover;
+}
+
+.ravencoin {
+  background-image: url("img/f.png");
+  background-size: cover;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.box {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid black;
+  background-color: #d9dbd9;
+}
+
+.visible {
+  visibility: hidden;
+}

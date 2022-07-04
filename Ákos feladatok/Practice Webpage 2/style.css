@@ -1,0 +1,734 @@
+/* 
+---1 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 176 / 212
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  color: #222;
+  font-family: sans-serif;
+}
+
+/* *********************************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* *********************************** */
+
+h1 {
+  font-size: 6rem;
+  text-align: right;
+  color: #222;
+}
+
+h2 {
+  font-size: 4.4rem;
+  color: #222;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #1864ab;
+  text-align: center;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.btn {
+  background-color: #1864ab;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #165a9a;
+}
+
+.grid {
+  display: grid;
+}
+
+/* HELPER CLASSES */
+
+.textdec {
+  text-decoration: none;
+  color: #ced4da;
+}
+
+.hover:hover {
+  color: #fff;
+}
+
+.border-radius {
+  border-radius: 10px;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+
+.top-info {
+  background-color: #333;
+  padding: 1.6rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  color: #ced4da;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.contact-info a div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.free-shipping {
+  color: #fff;
+}
+
+.top-list {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.callback {
+  color: #ced4da;
+  border-bottom: 1px dashed #ced4da;
+  padding-bottom: 0.2rem;
+}
+
+.callback:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  gap: 4.8rem;
+}
+
+.pathsoft-logo {
+  height: 4rem;
+  width: auto;
+  margin-right: 2.4rem;
+}
+
+.nav-icons {
+  font-size: 2.2rem;
+  color: #222;
+  margin-left: 1.2rem;
+}
+
+.nav-icons:hover {
+  color: #1864ab;
+}
+
+.nav-elements {
+  text-decoration: none;
+  color: #222;
+}
+
+.nav-elements:hover {
+  color: #165a9a;
+  transition: r;
+}
+.nav-chevron {
+  position: absolute;
+  left: 110%;
+  right: 0;
+  color: #165a9a;
+  align-self: center;
+}
+
+.nav-chevron-secondary {
+  position: absolute;
+  left: 110%;
+  right: 0;
+  opacity: 0;
+  color: #165a9a;
+  align-self: center;
+}
+
+.chevronp {
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+.chevronp:hover .nav-chevron {
+  opacity: 0;
+}
+
+.chevronp:hover .nav-chevron-secondary {
+  opacity: 100;
+}
+
+/* *********************************** */
+/* HERO SECTION */
+/* *********************************** */
+
+.section-hero {
+  background-image: url(img/man-running.jpg);
+  background-size: cover;
+  padding: 21.6rem 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.4rem;
+}
+
+/* *********************************** */
+/* SECTION PRODUCTS */
+/* *********************************** */
+
+.section-products {
+  padding: 9.6rem 0;
+}
+
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.6rem;
+  row-gap: 4.8rem;
+}
+
+.product-box {
+  width: 28rem;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 1px #ced4da;
+  position: relative;
+  transition: opacity 0.4s;
+}
+
+.product-box:hover {
+  border: none;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
+.product-box:hover .hidden-icon-box {
+  transform: translate(32%, -170%);
+  opacity: 100%;
+  /* transition: all 0.3s; */
+}
+
+.product-absolute::before {
+  position: absolute;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  left: 5%;
+  top: 3%;
+}
+
+.sale::before {
+  content: "sale";
+  background-color: #e03131;
+  color: #fff;
+}
+
+.new::before {
+  content: "new";
+  background-color: #40c057;
+  color: #fff;
+}
+
+.recommended::before {
+  content: "recommended";
+  background-color: #fcc419;
+  color: #222;
+}
+
+.product-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.img-shoe {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 1.6rem;
+}
+
+.hidden-icon-box {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  transform: translate(32%, -200%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.hidden-icons {
+  /* position: absolute; */
+  font-size: 3.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 0.6rem;
+  color: #333;
+}
+
+.hidden-icons:hover {
+  color: #fff;
+  background-color: #165a9a;
+}
+
+.star-icon {
+  color: #fcc419;
+  font-size: 1.6rem;
+}
+
+.shoes-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.product-link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.shoes-link:hover,
+.product-link:hover {
+  color: #1864ab;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1864ab;
+  margin-bottom: 3.2rem;
+}
+
+.btn-addtocart {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.btn-addtocart:hover {
+  cursor: pointer;
+  background-color: #135089;
+}
+
+/* *********************************** */
+/* SECTION-SALE */
+/* *********************************** */
+
+.section-sale {
+  padding: 9.6rem 0;
+}
+
+.grid--2-cols {
+  grid-template-columns: 3fr 2fr;
+  gap: 2.4rem;
+}
+
+.img-muscle-man {
+  grid-row: 1 / span 2;
+  background-image: url(img/muscle-man.jpg);
+  background-size: cover;
+  height: 68rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.muscle-man-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 4.8rem;
+}
+
+.week-sale {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.best-selling {
+  font-size: 4.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.discount {
+  color: #e03131;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.img-tennis {
+  background-image: url(img/tennis.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 3rem;
+  gap: 1.2rem;
+}
+
+.energy {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.img-tennis p span {
+  color: #1864ab;
+}
+
+.percentage {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #e03131;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-right: 110px;
+}
+
+.img-shoxtl {
+  background-image: url(img/shoxTL.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2.4rem;
+  padding: 3rem;
+}
+
+.shoxtl {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.shoxtl-price {
+  font-size: 2.2rem;
+  color: #e03131;
+  font-weight: 700;
+}
+
+/* *********************************** */
+/* SECTION-TESTIMONIALS */
+/* *********************************** */
+
+.section-testimonial {
+  padding: 9.6rem 0;
+}
+
+.testimonials {
+  text-align: center;
+  border: 1px solid #ced4da;
+  padding: 3.2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-imgs {
+  width: 6.8rem;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.img1 {
+  transform: translate(-175%, 0);
+}
+
+.img3 {
+  transform: translate(75%, 0);
+}
+/* *********************************** */
+/* VALAMI */
+/* *********************************** */
+.logos {
+  display: flex;
+  justify-content: space-between;
+  height: 3.2rem;
+
+  position: relative;
+}
+
+.logo {
+  filter: brightness(0);
+}
+
+.dots {
+  display: flex;
+  gap: 1.6rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 4rem);
+}
+
+.dot {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.dot:hover {
+  background-color: #165a9a;
+  cursor: pointer;
+}
+
+/* *********************************** */
+/* SECTION-DATA */
+/* *********************************** */
+
+.section-data {
+  padding: 9.6rem 0;
+}
+
+.data-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 9.8rem;
+}
+
+.data {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.data-icon {
+  font-size: 3.2rem;
+  background: linear-gradient(to right, #135089, #228be6);
+  color: #fff;
+  padding: 1.8rem;
+  border-radius: 50%;
+}
+
+.data-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.data-text-details {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* *********************************** */
+/* SECTION-DATA */
+/* *********************************** */
+
+.section-footer {
+  padding: 4.8rem 0;
+  background-color: #303036;
+  color: #d6d6d7;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  /* font-weight: 500; */
+}
+
+.grid-footer {
+  grid-template-columns: 1.4fr 1fr 1fr 2fr;
+  gap: 4.8rem;
+  row-gap: 4.8rem;
+}
+
+.section-footer ul {
+  list-style: none;
+}
+
+.section-footer a {
+  text-decoration: none;
+  color: #d6d6d7;
+}
+
+.company-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+/*  */
+.footer-pathsoft-logo {
+  width: 13.4rem;
+}
+
+.footer-social-links {
+  font-size: 1.4rem;
+  border: 1px solid #d6d6d7;
+  border-radius: 5px;
+  color: #d6d6d7;
+  padding: 0.8rem;
+  margin-top: 3.2rem;
+  margin-right: 0.8rem;
+}
+
+.footer-social-links:hover {
+  color: #303036;
+  background-color: #d6d6d7;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.footer-menu {
+  justify-self: end;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+/* HOW TO FILL THEESE ICONS WITH COLOR? OR JUST PICK ANOTHER ICONS THAT ARE ALREADY FILLED? */
+
+.footer-contact-icons {
+  font-size: 2.4rem;
+}
+
+/* I DON'T KNOW MUCH ABOUT FORMS YET */
+
+.flexbox input {
+  padding: 1.6rem;
+  background-color: #303036;
+  border: none;
+  box-shadow: inset 0px 0px 0px 1px #d6d6d7;
+  border-radius: 5px;
+  width: 20rem;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.btn-footer {
+  padding: 1.6rem;
+  width: 11.2rem;
+}
+
+.btn-footer:hover {
+  background-color: #165a9a;
+}
+
+/* *********************************** */
+/* SECTION-COPYRIGHT */
+/* *********************************** */
+
+.section-copyright {
+  padding: 2.4rem 0;
+  background-color: #303036;
+  color: #d6d6d7;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  border-top: 1px solid #555;
+}
+
+.section-copyright .flexbox {
+  justify-content: space-between;
+}
+
+.copyright-links {
+  text-decoration: none;
+  color: #d6d6d7;
+  margin-right: 1.2rem;
+  border-bottom: 1px dashed #d6d6d7;
+}
+
+.copyright-links:hover {
+  border-bottom: 1px solid #d6d6d7;
+}

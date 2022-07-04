@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-image: url("content-back.jpg");
+}
+
+.flex-wrapper {
+  font-size: 14px;
+  color: #dfc0a1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.logo {
+  max-width: 250px;
+  width: 100%;
+}
+
+.fish-dish {
+  max-width: 600px;
+  width: 100%;
+}
+
+.header-wrapper {
+  max-width: 250px;
+  margin-top: 75px;
+  text-align: justify;
+}
+
+.header-wrapper p {
+  margin-bottom: 20px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  height: 50px;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.192);
+  border-bottom: 5px solid #e09f3e;
+}
+.line {
+  background-color: #e09f3e;
+  height: 2px;
+  width: 15px;
+}
+
+nav a {
+  color: #dfc0a1;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.reservation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(27, 27, 27, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  padding: 50px 0px;
+}
+
+.reservation-wrapper img {
+  max-width: 200px;
+  width: auto;
+}
+.reservation-datas {
+  max-width: 400px;
+  width: auto;
+  color: #adb5bd;
+}

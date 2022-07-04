@@ -1,0 +1,182 @@
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 10rem 15rem 15rem 15rem;
+  box-sizing: border-box;
+  background-color: #fbede7;
+}
+
+body {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.table {
+  position: relative;
+  display: flex;
+  background-color: #822b09;
+  width: 53.5rem;
+  height: 100rem;
+  border: 1px solid #160701;
+}
+
+.color-pick-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 20rem;
+  background-color: #822b09;
+  /* border: 1px solid black; */
+  width: 43.5rem;
+  column-gap: 2rem;
+  bottom: -25%;
+  left: 9%;
+}
+
+.colors {
+  width: 8rem;
+  height: 8rem;
+  background-color: #ced4da;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #c92a2a;
+}
+
+.orange {
+  background-color: #f76707;
+}
+
+.yellow {
+  background-color: #ffd43b;
+}
+.green {
+  background-color: #94d82d;
+}
+.blue {
+  background-color: #1864ab;
+}
+.purple {
+  background-color: #7950f2;
+}
+.cyan {
+  background-color: #0b7285;
+}
+.black {
+  background-color: #000000;
+}
+
+.guess-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #822b09;
+  /* border: 1px solid black; */
+  box-shadow: inset 0 0 0 0.2rem #160701;
+  width: 43.5rem;
+  gap: 2rem;
+}
+
+.guess-dots {
+  width: 8rem;
+  height: 8rem;
+  background-color: #ced4da;
+  border-radius: 50%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  width: 10rem;
+  height: 100rem;
+}
+.check-box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10rem;
+  box-shadow: inset 0 0 0 0.2rem #160701;
+}
+
+.check-dot {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #160701;
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.controller-box {
+  justify-self: center;
+  align-self: center;
+  background-color: #822b09;
+  width: 20rem;
+  height: 50rem;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.btn {
+  font-size: 4rem;
+}
+
+.game-rules {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #adb5bd;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* HELPER CLASSES */
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.filled {
+}

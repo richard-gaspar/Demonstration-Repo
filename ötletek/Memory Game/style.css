@@ -1,0 +1,139 @@
+/* 
+---1 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 176 / 212
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  color: #222;
+  font-family: sans-serif;
+  background-color: #d9dbd9;
+}
+
+.memory-grid {
+  position: relative;
+  /* border-radius: 2%; */
+  background-color: #a3a6a3;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 12rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1.5rem;
+}
+
+.win {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d5573b;
+  color: #552318;
+  font-size: 1.6rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+.lose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d5573b;
+  color: #552318;
+  font-size: 1.6rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+.new-highscore {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d5573b;
+  color: #552318;
+  font-size: 1.6rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.img-box {
+  display: flex;
+  background-color: #3e403e;
+  max-width: 10rem;
+  justify-self: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-box:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+}
+
+.img-max-size {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  opacity: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 5rem;
+  font-size: 1.8rem;
+}
+
+.btn {
+  background-image: linear-gradient(to bottom, #c7c9c6, #696e68);
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.44);
+}
+
+.flipped {
+  background-color: #c7c9c6;
+  opacity: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+}
+
+.pair {
+  background-color: #f3d8c7;
+  opacity: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+}
