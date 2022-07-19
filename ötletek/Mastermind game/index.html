@@ -6,145 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mastermind game</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="javascript.js"></script>
+    <script src="js/javascript.js" defer></script>
   </head>
   <body>
-    <div class="flex grid">
-      <div class="table">
-        <div class="left-side">
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
-          <div class="guess-box">
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-            <div class="guess-dots"></div>
-          </div>
+    <div class="grid">
+      <div class="table box-shadow">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+        <div class="color-pick-box box-shadow">
+          <div class="colors red" data-color="rgb(201, 42, 42)"></div>
+          <div class="colors orange" data-color="rgb(247, 103, 7)"></div>
+          <div class="colors yellow" data-color="rgb(255, 212, 59)"></div>
+          <div class="colors green" data-color="rgb(148, 216, 45)"></div>
+          <div class="colors cyan" data-color="rgb(102, 217, 232)"></div>
+          <div class="colors blue" data-color="rgb(24, 100, 171)"></div>
+          <div class="colors purple" data-color="rgb(121, 80, 242)"></div>
+          <div class="colors black" data-color="rgb(0, 0, 0)"></div>
         </div>
-        <div class="right-side">
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box">
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-            <div class="check-dot"></div>
-          </div>
-          <div class="check-box"></div>
-          <div class="check-box"></div>
-        </div>
-        <div class="color-pick-box">
-          <div class="colors red"></div>
-          <div class="colors orange"></div>
-          <div class="colors yellow"></div>
-          <div class="colors green"></div>
-          <div class="colors cyan"></div>
-          <div class="colors blue"></div>
-          <div class="colors purple"></div>
-          <div class="colors black"></div>
-        </div>
+        <button class="delete-btn">Delete color</button>
       </div>
-      <div class="controller-box flexbox">
-        <div class="game-rules hidden">
+      <div class="controller-box flexbox box-shadow">
+        <div class="game-rules modal hidden box-shadow">
           <div>
             <div class="close-btn">x</div>
-            <!-- <h2>MasterMind game rules</h2>
+            <h2>MasterMind game rules</h2>
             <p>
               The computer has selected a secret combination of 4 colored
               circles and you have to guess that combination in 10 or fewer
-              tries to win.
+              tries to win. Be aware: each color can be multiple times in the
+              combination!
             </p>
             <h3>How to play . . .</h3>
             <p>
@@ -155,17 +45,30 @@
               score circles to let you know how close that guess is. For each
               guess a black score circle indicates that one of your circle is
               the right color in the right position. A white score circle
-              indicates that one of your circles is the right color in the wrong
-              position. Use the score to guide your next guess. If your guess
-              scores 4 black score cirlces within 10 tries, you win. To begin a
-              new game click the "new game" button. Good luck!
-            </p> -->
+              indicates that one of your circles is the right color but in the
+              wrong position. Use the score to guide your next guess. If your
+              guess scores 4 black score cirlces within 10 tries, you win. To
+              begin a new game click the "New game" button. Good luck!
+            </p>
+          </div>
+        </div>
+        <div class="victory-modal modal hidden box-shadow">
+          <div>
+            <div class="close-victory-btn close-btn">x</div>
+            <p>Congratulation! Your guess was right!</p>
           </div>
         </div>
 
-        <button class="btn">New game</button>
-        <button class="btn">Save game</button>
+        <div class="lose-modal modal hidden box-shadow">
+          <div>
+            <div class="close-lose-btn close-btn">x</div>
+            <p>You lost! Click the New game button and try again!</p>
+          </div>
+        </div>
+
+        <button class="btn new-game-btn">New game</button>
         <button class="btn game-rules-btn">Game rules</button>
+        <button class="btn check-my-guess">Check my guess</button>
       </div>
     </div>
     <div class="overlay hidden"></div>
