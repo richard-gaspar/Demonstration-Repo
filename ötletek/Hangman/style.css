@@ -1,0 +1,135 @@
+/* 
+colors: 
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+
+
+#112d32
+#254e58
+#88bdbc
+#4f4a41
+#6e6658
+
+
+*/
+
+html {
+  height: 100%;
+  background: linear-gradient(#254e58, #88bdbc);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  margin-top: -2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 110rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8rem;
+  color: #112d32;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.swing {
+  animation: swing 1s ease-in-out alternate infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.hangman-draw {
+  stroke-dasharray: 200;
+  animation: 3s fillSvg linear;
+}
+
+@keyframes fillSvg {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.new-game {
+  transition: all ease-in-out 0.3s;
+  font-size: 1.6rem;
+  background-color: #88bdbc;
+}
+
+.new-game:hover {
+  background-color: #112d32;
+  border: 0.2rem solid #88bdbc;
+  color: #88bdbc;
+  cursor: pointer;
+}
+
+.btn {
+  height: 4rem;
+  width: 12rem;
+  border: 0.2rem solid #112d32;
+}
+
+.paralelogram {
+  position: relative;
+  width: 20rem;
+  height: 6rem;
+  transform: skew(-50deg);
+  background: #555;
+  box-shadow: 5px 5px 9px 2px #000000;
+}
+
+.part1 {
+  position: absolute;
+  width: 1rem;
+  height: 20rem;
+  background: #555;
+  transform: skew(50deg);
+  left: -12rem;
+  bottom: 3rem;
+}
+
+.part2 {
+  position: absolute;
+  width: 1rem;
+  height: 3rem;
+  background: #555;
+  left: -20.4rem;
+  bottom: 20rem;
+}
+
+.part3 {
+  position: absolute;
+  width: 11rem;
+  height: 1rem;
+  background: #555;
+  left: -23rem;
+  bottom: 22rem;
+  transform: skew(50deg);
+}
+
+/* HELPES CLASSES */
+
+.hidden {
+  display: none;
+}

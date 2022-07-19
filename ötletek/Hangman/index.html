@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hangman game</title>
+    <script type="module" src="js/javascript.js" defer></script>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="flexbox hangman-art">
+        <svg
+          width="76"
+          height="318"
+          viewBox="0 0 76 318"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="hangman-draw hidden"
+            d="M32 0C32 22.0725 35 43.4266 35 65.5C35 86.0552 36 107.144 36 128"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M34 128C31.3379 128 21.7168 127.354 20 129.5C19.1933 130.508 15.8903 130.888 14.5 132C13.6188 132.705 11.5169 134.638 10.4444 134.944C2.5101 137.211 2 148.722 2 155.5C2 162.131 12.1251 172.514 17.5 175.5C26.7856 180.659 35.8605 182 46.5 182C55.329 182 60.128 172.883 65.222 167.222C68.899 163.136 68.561 144.426 64.778 140.222C61.654 136.751 59.122 133.567 55.778 130.222C52.105 126.549 49.268 127.119 45 125.222C41.1375 123.506 36.3751 124 32 124C27.2129 124 23.0521 127 19 127"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M36 181C36 197.049 39 212.185 39 228C39 236.023 40 243.235 40 251C40 254.756 38.0899 272.545 41 274"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M36 203C35.3626 208.099 29.3147 212.649 27.9444 217.444C26.653 221.964 18.4195 225.29 15 227"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M37 204C37.9123 212.211 47.318 214.772 50.5 220.5C51.603 222.486 57.6 225.718 60 226C61.708 226.201 61.953 228 64 228C66.291 228 67.87 228.29 70 229"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M39 273C39 279.136 29.3806 287.635 24.7778 291.778C20.8894 295.277 18.4336 300.122 14.7778 303.778C12.3715 306.184 6 312.442 6 316"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M43 272C43 276.276 47.19 278.748 49.222 282C51.506 285.655 56.221 288.026 59 291.5C64.209 298.011 69.407 304.111 74 311"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M21 144C16.9589 144 18.9156 150 23 150C28.1853 150 25.9689 145 22 145"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M48 144C42.8156 144.648 44.6672 152 49.5 152C52.856 152 52 149.808 52 147C52 143.793 49.581 144 47 144"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            class="hangman-draw hidden"
+            d="M19 165C19 162.437 23.801 161.129 26 161C30.1236 160.757 31.3537 161.196 34.2222 163.778C37.6571 166.869 49.204 171.592 52 166"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <h1>
+        <strong>Hangman</strong>
+      </h1>
+      <div class="flexbox">
+        <button class="btn new-game">New game</button>
+      </div>
+    </div>
+    <div class="flexbox">
+      <div class="paralelogram">
+        <div class="part1"></div>
+        <div class="part2"></div>
+        <div class="part3"></div>
+      </div>
+    </div>
+  </body>
+</html>
